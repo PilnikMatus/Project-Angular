@@ -9,6 +9,7 @@ import { JobsComponent } from './jobs/jobs.component';
 import { AdminsComponent } from './admins/admins.component';
 import { LogsComponent } from './logs/logs.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
