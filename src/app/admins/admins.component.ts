@@ -1,15 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-admins',
   templateUrl: './admins.component.html',
   styleUrls: ['./admins.component.scss']
 })
-export class AdminsComponent implements OnInit {
+export class AdminsComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  constructor(private httpClient: HttpClient) { }
 
 }
