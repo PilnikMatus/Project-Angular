@@ -10,7 +10,7 @@ import { Admin} from './admin';
 export class AdminService {
 
   constructor(private http: HttpClient) { }
-  adminUrl = 'https://api.github.com/users/BruhTheMomentum';
+  adminUrl = 'http://localhost:49497/api/admin/2';
 
   getAdmin(): Observable<Admin[]> {
     return this.http.get<Admin[]>(this.adminUrl);
