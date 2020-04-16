@@ -1,7 +1,31 @@
-<h1>Adminssss</h1>
+<h1>{{title}} </h1>
 
-<div>
-  {{adnim.text}}
+<!--<div *ngFor="let admin of arrAdmins">{{admin.id}}</div>-->
 
 
-</div>
+<table *ngIf="arrAdmins" >
+  <tr class="tableLabel">
+    <td>ID</td>
+    <td>Name</td>
+    <td>Surname</td>
+    <td>Email</td>
+    <td>Phone</td>
+  </tr>
+<tr *ngFor="let admin of arrAdmins">
+  <td>
+     {{admin.id}}
+  </td>
+  <td>
+    {{admin.firstname}}
+  </td>
+  <td>
+    {{admin.lastname}}
+  </td>
+  <td>
+    {{admin.email}}
+  </td>
+  <td>
+    {{admin.phone}}
+  </td>
+</tr>
+</table>

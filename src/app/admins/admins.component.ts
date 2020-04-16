@@ -8,6 +8,8 @@ import {AdminService} from '../admin.service';
   styleUrls: ['./admins.component.scss']
 })
 export class AdminsComponent implements OnInit {
+  public arrAdmins = [];
+  title = 'Admins';
   constructor(private adminService: AdminService) { }
 
   ngOnInit(): void {
@@ -15,6 +17,10 @@ export class AdminsComponent implements OnInit {
   }
   getAdmin(): void {
     this.adminService.getAdmin()
-      .subscribe((response) => console.log(response));
+      .subscribe((response) => {console.log(response);
+      for(let i = 0; i < response.length; i++){
+        this.arrAdmins.push(response[i]);
+      }
+      });
   }
 }
