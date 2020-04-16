@@ -6,8 +6,9 @@ import {HttpClient} from '@angular/common/http';
   templateUrl: './admins.component.html',
   styleUrls: ['./admins.component.scss']
 })
-export class AdminsComponent {
+export class AdminsComponent implements OnInit {
+  constructor() { }
 
-  constructor(private httpClient: HttpClient) { }
-
+  ngOnInit(): void {
+  }
 }
