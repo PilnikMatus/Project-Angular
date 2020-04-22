@@ -1,19 +1,19 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import { Observable} from 'rxjs';
-import { Admin } from './admin';
+import { Client } from './client';
 import {environment} from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 
-export class AdminService {
+export class ClientsService {
 
   constructor(private http: HttpClient) { }
-  adminUrl = environment.serverName + 'admin';
+  clientUrl = environment.serverName + 'client';
 
-  getAdmin(): Observable<Admin[]> {
-    return this.http.get<Admin[]>(this.adminUrl);
+  getClient(): Observable<Client[]> {
+    return this.http.get<Client[]>(this.clientUrl);
   }
 }

@@ -1,0 +1,14 @@
+table{
+  padding: 1%;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  width: 60%;
+  margin: auto;
+  transition: 1s;
+}
+table:hover{
+  box-shadow: 0 0 20px rgba(0,0,0,.4);
+}
+.tableLabel{
+  color: rgb(255,105,0);
+}
