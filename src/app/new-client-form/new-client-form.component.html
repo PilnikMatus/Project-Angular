@@ -1,0 +1,12 @@
+<form [formGroup]="clientForm" class="new-client" (ngSubmit)="onSubmit()">
+  <h1>New Client</h1>
+  <label for="name">Name</label>
+  <input type="text" class="name" id="name" formControlName="name"><br>
+  <label for="mac_address">Mac Address</label>
+  <input type="text" class="mac_address" id="mac_address" formControlName="mac_address"><br>
+  <label for="ip_address">Ip Address</label>
+  <input type="text" class="ip_address" id="ip_address" formControlName="ip_address"><br>
+  <label for="active">Active</label>
+  <input type="checkbox" class="active" id="active" formControlName="active"><br>
+  <input type="submit" id="submit" class="submit" name="submit" value="Submit">
+</form>

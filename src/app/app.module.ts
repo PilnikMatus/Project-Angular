@@ -10,6 +10,8 @@ import { AdminsComponent } from './admins/admins.component';
 import { LogsComponent } from './logs/logs.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NewClientFormComponent } from './new-client-form/new-client-form.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { HttpClientModule } from '@angular/common/http';
     JobsComponent,
     AdminsComponent,
     LogsComponent,
-    HomeComponent
+    HomeComponent,
+    NewClientFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,6 +6,7 @@ import { JobsComponent } from './jobs/jobs.component';
 import { AdminsComponent } from './admins/admins.component';
 import { LogsComponent } from './logs/logs.component';
 import { HomeComponent } from './home/home.component';
+import { NewClientFormComponent} from './new-client-form/new-client-form.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'jobs', component: JobsComponent},
   {path: 'admins', component: AdminsComponent},
   {path: 'logs', component: LogsComponent},
-  {path: 'home', component: HomeComponent}
+  {path: 'home', component: HomeComponent},
+  {path: 'new-client', component: NewClientFormComponent}
 
 ];
 
