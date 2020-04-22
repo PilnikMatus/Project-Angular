@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl} from '@angular/forms';
 import { ClientsService } from '../clients.service';
-import {Client} from '../client';
+import {ClientsComponent} from '../clients/clients.component';
 
 @Component({
   selector: 'app-new-client-form',
@@ -10,7 +10,9 @@ import {Client} from '../client';
 })
 export class NewClientFormComponent implements OnInit {
    clientForm: FormGroup;
+
   constructor(private clientsService: ClientsService) { }
+  private clientsComponent: ClientsComponent;
 
   ngOnInit(): void {
     this.clientForm = new FormGroup({
@@ -21,8 +23,10 @@ export class NewClientFormComponent implements OnInit {
     });
   }
   onSubmit(): void {
+    this.clientsComponent = new ClientsComponent(this.clientsService);
     console.log(this.clientForm.value);
-    this.clientsService.postClient(this.clientForm.value);
+    this.clientsService.postClient(this.clientForm.value)
+      .subscribe(data => this.clientsComponent.arrClients.push(data));
   }
 
 }

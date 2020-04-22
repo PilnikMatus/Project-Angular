@@ -18,8 +18,6 @@ export class ClientsService {
   }
   postClient(client: Client): Observable<Client>{
     console.log(client);
-    return this.http.post<Client>(this.clientUrl, client, {
-      headers: new HttpHeaders({'Content-Type': 'application/json'})
-    });
+    return this.http.post<Client>(this.clientUrl, client);
   }
 }
