@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NewClientFormComponent } from './new-client-form/new-client-form.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { EditClientComponent } from './edit-client/edit-client.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     AdminsComponent,
     LogsComponent,
     HomeComponent,
-    NewClientFormComponent
+    NewClientFormComponent,
+    EditClientComponent
   ],
   imports: [
     BrowserModule,
