@@ -11,7 +11,6 @@ import { Router} from '@angular/router';
 })
 export class NewClientFormComponent implements OnInit {
    clientForm: FormGroup;
-
   constructor(private clientsService: ClientsService) { }
   private clientsComponent: ClientsComponent;
   private router: Router;
@@ -25,14 +24,10 @@ export class NewClientFormComponent implements OnInit {
     });
   }
   onSubmit(): void {
-    /*
     this.clientsComponent = new ClientsComponent(this.clientsService);
     console.log(this.clientForm.value);
     this.clientsService.postClient(this.clientForm.value)
       .subscribe(data => this.clientsComponent.arrClients.push(data));
-      */
     console.log(this.clientForm.value);
-    this.clientsService.putClient(this.clientsService.getClientById());
   }
-
 }

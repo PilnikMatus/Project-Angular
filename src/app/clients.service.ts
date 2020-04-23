@@ -20,7 +20,6 @@ export class ClientsService {
     return this.http.get<Client>(this.clientUrl + '/' + Id);
   }
   postClient(client: Client): Observable<Client>{
-    console.log(client);
     return this.http.post<Client>(this.clientUrl, client);
   }
   putClient(client: Client): Observable<void> {

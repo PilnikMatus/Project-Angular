@@ -26,5 +26,8 @@
     <td>
       {{client.active}}
     </td>
+    <td>
+      <button class="newClient" routerLink="/edit-client" (click)="this.editClient.myFunc(client)">Edit</button>
+    </td>
   </tr>
 </table>
