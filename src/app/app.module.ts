@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NewClientFormComponent } from './new-client-form/new-client-form.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { EditClientComponent } from './edit-client/edit-client.component';
+import { NewAdminComponent } from './new-admin/new-admin.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EditClientComponent } from './edit-client/edit-client.component';
     LogsComponent,
     HomeComponent,
     NewClientFormComponent,
-    EditClientComponent
+    EditClientComponent,
+    NewAdminComponent
   ],
   imports: [
     BrowserModule,

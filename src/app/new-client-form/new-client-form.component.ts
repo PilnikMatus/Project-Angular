@@ -20,7 +20,7 @@ export class NewClientFormComponent implements OnInit {
       name: new FormControl(),
       mac_address: new FormControl(),
       ip_address: new FormControl(),
-      active: new FormControl()
+      active: new FormControl(),
     });
   }
   onSubmit(): void {

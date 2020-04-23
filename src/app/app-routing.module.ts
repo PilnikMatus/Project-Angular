@@ -8,6 +8,7 @@ import { LogsComponent } from './logs/logs.component';
 import { HomeComponent } from './home/home.component';
 import { NewClientFormComponent} from './new-client-form/new-client-form.component';
 import {EditClientComponent} from './edit-client/edit-client.component';
+import {NewAdminComponent} from './new-admin/new-admin.component';
 
 
 const routes: Routes = [
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: 'logs', component: LogsComponent},
   {path: 'home', component: HomeComponent},
   {path: 'new-client', component: NewClientFormComponent},
-  {path: 'edit-client', component: EditClientComponent}
+  {path: 'edit-client', component: EditClientComponent},
+  {path: 'new-admin', component: NewAdminComponent}
 
 ];
 
