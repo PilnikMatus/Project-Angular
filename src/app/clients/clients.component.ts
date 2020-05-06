@@ -17,13 +17,9 @@ export class ClientsComponent implements OnInit {
   }
   getClient(): void {
     this.clientService.getClient()
-      .subscribe((response) => {console.log(response);
+      .subscribe((response) => {
+        console.log(response);
         this.arrClients = response;
-
       });
   }
-
-
-
-
 }
