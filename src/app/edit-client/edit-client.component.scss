@@ -1,15 +1,49 @@
-input{
-  margin: 2.5%;
-}
 .new-client{
-  position: relative;;
+  position: relative;
   background-color: white;
   width: 50%;
   margin: auto;
   margin-top: 5%;
   padding: 1%;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  text-align: center;
 }
+.item{
+  border: solid rgb(240,240,240);
+  border-radius: 10px;
+  width: 40%;
+  display: inline-grid;
+  margin: 2%;
+  min-height: 50px;
+  padding: 1%;
+  text-align: center;
+  label{
+    color: rgb(255,105,0);
+  }
+}
+input{
+  margin: 2.5%;
+  border: none;
+  background-color: rgb(240,240,240);
+  padding: 2%;
+  outline: none;
+  transition: .5s;
+  border-bottom: solid 2px white;
+  text-align: center;
+  width: 92%;
+}
+input:focus{
+  background-color: rgb(220,220,220);
+  border-bottom: solid 2px rgb(255,105,0);
+}
+input[type=submit]{
+  width: 90%;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color: rgb(200,200,200);
+}
+
 h1{
   color: rgb(255,105,0);
   margin: 1%;

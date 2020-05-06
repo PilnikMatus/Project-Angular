@@ -1,3 +1,28 @@
 <h1>{{title}}</h1>
 
-
+<table *ngIf="this.arrJobs" >
+  <tr class="tableLabel">
+    <td>ID</td>
+    <td>Name</td>
+    <td>Backup Type</td>
+    <td>Format Type</td>
+    <td>Active</td>
+  </tr>
+  <tr *ngFor="let job of this.arrJobs">
+    <td>
+      {{job.id}}
+    </td>
+    <td>
+      {{job.name}}
+    </td>
+    <td>
+      {{job.backup_type}}
+    </td>
+    <td>
+      {{job.format_type}}
+    </td>
+    <td>
+      {{job.active}}
+    </td>
+  </tr>
+</table>

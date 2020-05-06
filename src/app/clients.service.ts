@@ -23,10 +23,6 @@ export class ClientsService {
     return this.http.post<Client>(this.clientUrl, client);
   }
   putClient(client: Client): Observable<void>{
-    console.log(`${this.clientUrl}/${client.id}`);
-    console.log('---');
-    console.log('v pu je toto:');
-    console.log(client);
     return this.http.put<void>(`${this.clientUrl}/${client.id}`, client, {
       headers: new HttpHeaders({
         'Content-Type': 'application/json'

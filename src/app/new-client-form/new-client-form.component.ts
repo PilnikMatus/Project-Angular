@@ -27,7 +27,10 @@ export class NewClientFormComponent implements OnInit {
     this.clientsComponent = new ClientsComponent(this.clientsService);
     console.log(this.clientForm.value);
     this.clientsService.postClient(this.clientForm.value)
-      .subscribe(data => this.clientsComponent.arrClients.push(data));
+      .subscribe(data =>
+      {this.clientsComponent.arrClients.push(data);
+      this.router.navigate(['clients']);
+      });
     console.log(this.clientForm.value);
   }
 }
