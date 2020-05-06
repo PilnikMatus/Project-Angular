@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { NewClientFormComponent} from './new-client-form/new-client-form.component';
 import {EditClientComponent} from './edit-client/edit-client.component';
 import {NewAdminComponent} from './new-admin/new-admin.component';
+import {EditJobComponent} from './edit-job/edit-job.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'new-client', component: NewClientFormComponent},
   {path: 'new-admin', component: NewAdminComponent},
-  {path: 'client/:id', component: EditClientComponent}
+  {path: 'client/:id', component: EditClientComponent},
+  {path: 'job/:id', component: EditJobComponent}
 
 ];
 

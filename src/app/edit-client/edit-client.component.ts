@@ -16,7 +16,7 @@ export class EditClientComponent implements OnInit {
   public client: Client;
   test: Client;
 
-  constructor(private service: ClientsService, private router: ActivatedRoute, private routerRouter: Router) {
+  constructor(private service: ClientsService, private route: ActivatedRoute, private routerRouter: Router) {
     this.getClient();
   }
   ngOnInit(): void {
@@ -31,7 +31,7 @@ export class EditClientComponent implements OnInit {
     );
   }
   getClient(): void{
-    const id = this.router.snapshot.paramMap.get('id');
+    const id = this.route.snapshot.paramMap.get('id');
     this.service.getClientById(id)
       .subscribe(c  => {
         this.client = c as Client;
