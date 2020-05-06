@@ -18,8 +18,8 @@ const routes: Routes = [
   {path: 'logs', component: LogsComponent},
   {path: 'home', component: HomeComponent},
   {path: 'new-client', component: NewClientFormComponent},
-  {path: 'edit-client', component: EditClientComponent},
-  {path: 'new-admin', component: NewAdminComponent}
+  {path: 'new-admin', component: NewAdminComponent},
+  {path: 'client/:id', component: EditClientComponent}
 
 ];
 

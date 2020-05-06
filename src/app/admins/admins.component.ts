@@ -17,8 +17,9 @@ export class AdminsComponent implements OnInit {
   }
   getAdmin(): void {
     this.adminService.getAdmin()
-      .subscribe((response) => {console.log(response);
-      this.arrAdmins = response;
+      .subscribe((response) => {
+        console.log(response);
+        this.arrAdmins = response;
       });
   }
 }

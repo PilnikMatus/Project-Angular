@@ -10,7 +10,7 @@
     <td>Ip address</td>
     <td>Active</td>
   </tr>
-  <tr *ngFor="let client of arrClients">
+  <tr *ngFor="let client of arrClients" routerLink="/client/{{this.client.id}}">
     <td>
       {{client.id}}
     </td>
@@ -27,7 +27,7 @@
       {{client.active}}
     </td>
     <td>
-      <button class="newClient" routerLink="/edit-client" (click)="this.editClient.myFunc(client)">Edit</button>
+      <button class="newClient" routerLink="/client/{{this.client.id}}">Edit</button>
     </td>
   </tr>
 </table>

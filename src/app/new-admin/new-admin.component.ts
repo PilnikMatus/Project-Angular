@@ -11,9 +11,8 @@ import {AdminsComponent} from '../admins/admins.component';
 })
 export class NewAdminComponent implements OnInit {
   adminForm: FormGroup;
-  constructor(private service: AdminService) { }
+  constructor(private service: AdminService, private router: Router) { }
   private adminComponent: AdminsComponent;
-  private router: Router;
   title = 'New Admin';
 
   ngOnInit(): void {
@@ -34,6 +33,7 @@ export class NewAdminComponent implements OnInit {
     this.service.postAdmin(this.adminForm.value)
       .subscribe(data => {
         this.adminComponent.arrAdmins.push(data);
+        this.router.navigate(['/clients']);
       });
     console.log(this.adminForm.value);
   }
