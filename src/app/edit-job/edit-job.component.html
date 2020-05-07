@@ -27,6 +27,21 @@
     <label for="sourcePath">Local source</label>
     <input type="text" id="sourcePath" formControlName="sourcePath">
   </div>
+
+  <div class="item">
+    <label for="targetPath">Target path</label>
+    <input type="text" id="targetPath" formControlName="targetPath">
+  </div>
+  <div class="item">
+    <input type="number" id="repetation_number" formControlName="repetation_number">
+    <select name="repetation_unit" id="repetation_unit" formControlName="repetation_unit">
+      <option value="hour" label="hour"></option>
+      <option value="day" label="day"></option>
+      <option value="week" label="week"></option>
+      <option value="month" label="month"></option>
+    </select>
+  </div>
+
   <input type="submit" value="submit">
 
 

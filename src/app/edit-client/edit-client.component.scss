@@ -24,11 +24,10 @@
 input{
   margin: 2.5%;
   border: none;
-  background-color: rgb(240,240,240);
   padding: 2%;
   outline: none;
   transition: .5s;
-  border-bottom: solid 2px white;
+  border-bottom: solid 2px rgb(255,105,0);
   text-align: center;
   width: 92%;
 }
@@ -39,6 +38,7 @@ input:focus{
 input[type=submit]{
   width: 90%;
   cursor: pointer;
+  border-bottom: white;
 }
 input[type=submit]:hover{
   background-color: rgb(200,200,200);
@@ -48,4 +48,16 @@ h1{
   color: rgb(255,105,0);
   margin: 1%;
   padding: 0;
+}
+#delete{
+  background-color: rgb(255,105,0);
+  border: none ;
+  width: 90%;
+  padding: 2%;
+  cursor: pointer;
+  transition: .5s;
+}
+
+#delete:hover{
+  background-color: red;
 }

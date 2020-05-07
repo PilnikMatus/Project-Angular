@@ -27,5 +27,4 @@ export class JobsComponent implements OnInit {
       console.log(this.arrJobs);
     });
   }
-
 }

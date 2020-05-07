@@ -29,4 +29,7 @@ export class ClientsService {
       })
     });
   }
+  deleteClient(id: string): Observable<void>{
+    return this.http.delete<void>(this.clientUrl + '/' + id);
+  }
 }

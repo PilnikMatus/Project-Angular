@@ -15,6 +15,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { EditClientComponent } from './edit-client/edit-client.component';
 import { NewAdminComponent } from './new-admin/new-admin.component';
 import { EditJobComponent } from './edit-job/edit-job.component';
+import { NewJobComponent } from './new-job/new-job.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { EditJobComponent } from './edit-job/edit-job.component';
     NewClientFormComponent,
     EditClientComponent,
     NewAdminComponent,
-    EditJobComponent
+    EditJobComponent,
+    NewJobComponent
   ],
   imports: [
     BrowserModule,

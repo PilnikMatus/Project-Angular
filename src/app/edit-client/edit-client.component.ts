@@ -62,4 +62,7 @@ export class EditClientComponent implements OnInit {
       active: this.client.active
     });
   }
+  delete(): void {
+    this.service.deleteClient(this.client.id).subscribe( () => this.routerRouter.navigate(['clients']));
+  }
 }
