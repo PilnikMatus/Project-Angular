@@ -14,7 +14,7 @@ form{
   width: 40%;
   display: inline-grid;
   margin: 2%;
-  min-height: 50px;
+  min-height: 100px;
   padding: 1%;
   text-align: center;
   label{
@@ -49,7 +49,7 @@ h1{
   padding: 0;
 }
 select{
-  min-height: 25px;
+  height: 25px;
 }
 #client{
   width: 20%;
