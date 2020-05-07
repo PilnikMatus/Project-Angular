@@ -1,0 +1,49 @@
+
+<form>
+  <div class="item">
+    <label for="name">Name</label>
+    <input type="text" id="name" formControlName="name">
+  </div>
+  <div class="item">
+    <label for="backup_type">Backup Type</label>
+    <select name="backup_type" id="backup_type" formControlName="backup_type">
+      <option value="full_backup" label="Full"></option>
+      <option value="diff_backup" label="Differential"></option>
+      <option value="inc_backup" label="Incremental"></option>
+    </select>
+  </div>
+  <div class="item">
+    <label for="format_type">Format Type</label>
+    <select name="format_type" id="format_type" formControlName="format_type">
+      <option value="folder" label="Folder"></option>
+      <option value="zip" label="ZIP"></option>
+    </select>
+  </div>
+  <div class="item">
+    <label for="active">Active</label>
+    <input type="checkbox" id="active" formControlName="active">
+  </div>
+  <div class="item">
+    <label for="sourcePath">Local source</label>
+    <input type="text" id="sourcePath" formControlName="sourcePath">
+  </div>
+
+  <div class="item">
+    <label for="targetPath">Target path</label>
+    <input type="text" id="targetPath" formControlName="targetPath">
+  </div>
+  <div class="item">
+    <input type="number" id="repetation_number" formControlName="repetation_number">
+    <select name="repetation_unit" id="repetation_unit" formControlName="repetation_unit">
+      <option value="hour" label="hour"></option>
+      <option value="day" label="day"></option>
+      <option value="week" label="week"></option>
+      <option value="month" label="month"></option>
+    </select>
+  </div>
+
+
+  <input type="submit" value="submit">
+
+
+</form>

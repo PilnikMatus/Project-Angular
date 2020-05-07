@@ -16,6 +16,9 @@ import { EditClientComponent } from './edit-client/edit-client.component';
 import { NewAdminComponent } from './new-admin/new-admin.component';
 import { EditJobComponent } from './edit-job/edit-job.component';
 import { NewJobComponent } from './new-job/new-job.component';
+import { SourceComponent } from './source/source.component';
+import { TargetComponent } from './target/target.component';
+import { TimeComponent } from './time/time.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { NewJobComponent } from './new-job/new-job.component';
     EditClientComponent,
     NewAdminComponent,
     EditJobComponent,
-    NewJobComponent
+    NewJobComponent,
+    SourceComponent,
+    TargetComponent,
+    TimeComponent
   ],
   imports: [
     BrowserModule,

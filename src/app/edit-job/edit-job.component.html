@@ -42,6 +42,13 @@
     </select>
   </div>
 
+  <div *ngFor="let client of arrClients">
+    <label for="client">{{client.id}} - {{client.name}}</label>
+  <input  type="checkbox" value="{{client.id}}" id="client">
+
+  </div>
+
+
   <input type="submit" value="submit">
 
 
