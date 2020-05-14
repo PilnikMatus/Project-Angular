@@ -45,10 +45,10 @@ export class EditJobComponent implements OnInit {
     });
     console.log('id is: ' + this.id);
     this.getBackup();
-    this.getSource();
-    this.getTarget();
-    this.getTime();
-    this.getClient();
+    // this.getSource();
+    // this.getTarget();
+    // this.getTime();
+    // this.getClient();
 
   }
 
@@ -111,6 +111,7 @@ export class EditJobComponent implements OnInit {
       }
       this.importToForm();
     });
+
   }
   setVaules(): void{
     this.backup.name = this.backupForm.value.name;
@@ -129,11 +130,11 @@ export class EditJobComponent implements OnInit {
       name: this.backup.name,
       backup_type: this.backup.backup_type,
       format_type: this.backup.format_type,
-      active: this.backup.active,
-      sourcePath: this.source.path,
-      targetPath: this.target.config,
-      repetation_number: this.time.repetation_number,
-      repetation_unit: this.time.repetation_unit
+      active: this.backup.active
+      //sourcePath: this.source.path,
+      //targetPath: this.target.config,
+      //repetation_number: this.time.repetation_number,
+      //repetation_unit: this.time.repetation_unit
   /*
     if (this.source == null) {
       this.backupForm.patchValue({

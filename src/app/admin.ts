@@ -8,4 +8,5 @@ export interface Admin {
   log_repetation_unit: string;
   log_repetation_number: number;
   log_importance: number;
+  token: string;
 }
