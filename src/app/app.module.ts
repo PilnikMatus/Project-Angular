@@ -19,6 +19,7 @@ import { NewJobComponent } from './new-job/new-job.component';
 import { SourceComponent } from './source/source.component';
 import { TargetComponent } from './target/target.component';
 import { TimeComponent } from './time/time.component';
+import { LoginFormComponent } from './login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { TimeComponent } from './time/time.component';
     NewJobComponent,
     SourceComponent,
     TargetComponent,
-    TimeComponent
+    TimeComponent,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,
