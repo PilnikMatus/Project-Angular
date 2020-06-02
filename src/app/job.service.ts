@@ -7,7 +7,6 @@ import { Observable} from 'rxjs';
 })
 export class JobService {
 
-
   constructor(private http: HttpClient) { }
 
 

@@ -15,11 +15,11 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { EditClientComponent } from './edit-client/edit-client.component';
 import { NewAdminComponent } from './new-admin/new-admin.component';
 import { EditJobComponent } from './edit-job/edit-job.component';
-import { NewJobComponent } from './new-job/new-job.component';
 import { SourceComponent } from './source/source.component';
 import { TargetComponent } from './target/target.component';
 import { TimeComponent } from './time/time.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { NewJobComponent } from './new-job/new-job.component';
 
 @NgModule({
   declarations: [
@@ -34,11 +34,11 @@ import { LoginFormComponent } from './login-form/login-form.component';
     EditClientComponent,
     NewAdminComponent,
     EditJobComponent,
-    NewJobComponent,
     SourceComponent,
     TargetComponent,
     TimeComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    NewJobComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,56 @@
+form{
+  position: relative;
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  margin-top: 5%;
+  padding: 1%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+.item{
+  border: solid rgb(240,240,240);
+  border-radius: 10px;
+  width: 40%;
+  display: inline-grid;
+  margin: 2%;
+  min-height: 100px;
+  padding: 1%;
+  text-align: center;
+  label{
+    color: rgb(255,105,0);
+  }
+}
+input{
+  margin: 2.5%;
+  border: none;
+  padding: 2%;
+  outline: none;
+  transition: .5s;
+  border-bottom: solid 2px rgb(240,240,240);
+  text-align: center;
+  width: 92%;
+}
+input:focus{
+  border-bottom: solid 2px rgb(255,105,0);
+}
+input[type=submit]{
+  width: 90%;
+  cursor: pointer;
+  border-bottom: white;
+}
+input[type=submit]:hover{
+  background-color: rgb(200,200,200);
+}
+
+h1{
+  color: rgb(255,105,0);
+  margin: 1%;
+  padding: 0;
+}
+select{
+  height: 25px;
+}
+#client{
+  width: 20%;
+}

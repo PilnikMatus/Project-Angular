@@ -33,13 +33,15 @@
     <input type="text" id="targetPath" formControlName="targetPath">
   </div>
   <div class="item">
-    <input type="number" id="repetation_number" formControlName="repetation_number">
-    <select name="repetation_unit" id="repetation_unit" formControlName="repetation_unit">
+  <div class="item" *ngFor="let time of arrTime">
+    <input type="number" id="repetation_number_{{time.repetation_unit + time.repetation_number}}" formControlName="repetation_number">
+    <select name="repetation_unit" id="repetation_unit_{{time.repetation_unit + time.repetation_number}}" formControlName="repetation_unit">
       <option value="hour" label="hour"></option>
       <option value="day" label="day"></option>
       <option value="week" label="week"></option>
       <option value="month" label="month"></option>
     </select>
+  </div>
   </div>
 
   <div *ngFor="let client of arrClients">
